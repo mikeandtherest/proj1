@@ -2,5 +2,9 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
 
-bootstrapApplication(AppComponent, appConfig)
+  console.log('main.ts');
+
+bootstrapApplication(AppComponent, appConfig).then(() => {
+  console.log('Application started');
+})
   .catch((err) => console.error(err));
