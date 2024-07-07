@@ -20,20 +20,18 @@
     "useDefineForClassFields": false,
     "lib": [
       "ES2022",
-      "dom"
+      "dom",
+      "DOM.Iterable"
     ],
-    "types": []
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "resolveJsonModule": false,
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
-  },
-  "files": [
-    "src/main.ts"
-  ],
-  "include": [
-    "src"
-  ]
+  }
 }
