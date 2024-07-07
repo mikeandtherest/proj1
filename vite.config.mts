@@ -1,14 +1,13 @@
 import { defineConfig } from 'vite';
 import angular from '@analogjs/vite-plugin-angular';
-import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
-  plugins: [angular(), tsconfigPaths()],
+  plugins: [angular()],
   resolve: {
     extensions: ['.ts', '.js']
   },
   build: {
-    target: 'es2022',
+    target: 'es2020',
   },
   optimizeDeps: {
     include: ['@angular/common', '@angular/core'],
